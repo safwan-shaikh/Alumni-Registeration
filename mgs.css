@@ -1,0 +1,37 @@
+/* Set background color */
+body {
+    background-image: url(bgbg.jpg);
+    background-size: 100%;
+  }
+  
+  /* Set container styles */
+  .container {
+    background-image: url(userbg.jpg);
+    background-size: 110%;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Set header styles */
+  h1 {
+   
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Set message styles */
+  p {
+    color: #3c76b1;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Set message span styles */
+  span {
+    font-weight: bold;
+ 
+  }
+  

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+    <link rel="stylesheet" href="mgs.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1>User Details</h1>
+    <p><span id="message"></span> </span></p>
+    <p><span id="emailmsg"></span></p>
+    <p><span id="passmsg"></span></p>
+    <p><span id="phnomsg"></span></p>
+    <p><span id="professionmsg"></span></p>
+    <p><span id="dobmsg"></span></p>
+    <p><span id="addressmsg"></span></p>
+    
+</div>
+
+    <script>
+        // Get the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Get the first name and last name from the parameters
+        const firstName = urlParams.get('firstname');
+        const lastName = urlParams.get('lastname');
+        const email = urlParams.get('email');
+       const addre= urlParams.get('addre');
+       const passout= urlParams.get('passout');
+       const  phno = urlParams.get('phno');
+       const  day = urlParams.get('day');
+       const  month = urlParams.get('month');
+       const  year = urlParams.get('year');
+       const  profession = urlParams.get('profession');
+       const city= urlParams.get('city')
+       const state= urlParams.get('state')
+       const pincode= urlParams.get('pincode')
+       
+       
+       
+        // Find the element to display the message
+        const messageElement = document.getElementById('message');
+        const emailele = document.getElementById('emailmsg')
+        const addressele =document.getElementById('addressmsg')
+        const passoutele= document.getElementById('passmsg')
+        const phnoeele = document.getElementById('phnomsg')
+        const professionele = document.getElementById('professionmsg')
+        const dobele = document.getElementById('dobmsg')
+        // Set the message to display on the page
+        messageElement.innerText = `Name : ${firstName} ${lastName}`;
+        emailele.innerText = `Email : ${email}`;
+        addressele.innerText= `Address : ${addre}, ${city}, ${state}, ${pincode}.`;
+        passoutele.innerText= `Passout Year : ${passout}`;
+        phnoeele.innerText= `Phone Number : ${phno}`;
+        professionele.innerText= `Profession : ${profession}`;
+        dobele.innerText= `Date of Birth:  ${day}/${month}/${year}`;
+
+       
+    </script>
+</body>
+
+</html>
